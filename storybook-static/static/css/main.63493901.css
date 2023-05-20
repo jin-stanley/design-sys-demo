@@ -1,0 +1,149 @@
+/* CSS Variables */
+:root {
+  /* Brand woolworths primary */
+  --woolworths-primary-default: #178841;
+  --woolworths-primary-hover: #126c34;
+  --woolworths-primary-focus: #126c34;
+  --woolworths-primary-active: #0d5127;
+
+  /* Brand everyday-rewards primary */
+  --everyday-rewards-primary-default: #d44500;
+  --everyday-rewards-primary-hover: #b14600;
+  --everyday-rewards-primary-focus: #b14600;
+  --everyday-rewards-primary-active: #7f3200;
+
+  /* We can set as more brands as we want here */
+  --customize-brand-default: unset;
+  --customize-brand-hover: unset;
+  --customize-brand-focus: unset;
+  --customize-brand-active: unset;
+}
+
+/* Button style */
+button {
+  --button-font-family: Arial;
+  --button-border-radius: 8px;
+  --button-border: none;
+  --button-cursor: pointer;
+  --button-display: inline-block;
+  --button-text-align: center;
+  --button-text-decoration: none;
+  --button-white-space: nowrap;
+  --button-transition: background-color 0.3s ease;
+  --button-primary-text-color: #ffffff;
+
+  /* Button large */
+  --button-large-height: 48px;
+  --button-large-font-size: 16px;
+  --button-large-line-height: 24px;
+  --button-large-padding: 12px 16px;
+
+  /* Button small*/
+  --button-small-height: 36px;
+  --button-small-font-size: 14px;
+  --button-small-line-height: 20px;
+  --button-small-padding: 8px 16px;
+}
+
+/* General Button Styles */
+.button {
+  font-family: var(--button-font-family);
+  border-radius: var(--button-border-radius);
+  border: var(--button-border-border);
+  cursor: var(--button-cursor);
+  display: var(--button-display);
+  text-align: var(--button-text-align);
+  -webkit-text-decoration: var(--button-text-decoration);
+          text-decoration: var(--button-text-decoration);
+  white-space: var(--button-white-space);
+  transition: var(--button-transition);
+}
+
+.button-full {
+  width: 100%;
+}
+
+/* Button disabled */
+.button-disabled {
+  background: "#eaeaea";
+  color: "#c0c0c0";
+  cursor: not-allowed;
+}
+
+/* Large Size Button Styles */
+.button-large {
+  height: var(--button-large-height);
+  font-size: var(--button-large-font-size);
+  line-height: var(--button-large-line-height);
+  padding: var(--button-large-padding);
+}
+
+/* Small Size Button Styles */
+.button-small {
+  height: var(--button-small-height);
+  font-size: var(--button-small-font-size);
+  line-height: var(--button-small-line-height);
+  padding: var(--button-small-padding);
+}
+
+/* Woolworths Primary Button Styles */
+.button-woolworths-primary {
+  background-color: var(--woolworths-primary-default);
+  color: var(--button-primary-text-color);
+}
+
+.button-woolworths-primary:hover {
+  background-color: var(--woolworths-primary-hover);
+}
+
+.button-woolworths-primary:focus {
+  background-color: var(--woolworths-primary-focus);
+  outline: none;
+}
+
+.button-woolworths-primary:active {
+  background-color: var(--woolworths-primary-active);
+}
+
+/* Everyday Rewards Primary Button Styles */
+.button-everyday-rewards-primary {
+  background-color: var(--everyday-rewards-primary-default);
+  color: var(--button-primary-text-color);
+}
+
+.button-everyday-rewards-primary:hover {
+  background-color: var(--everyday-rewards-primary-hover);
+}
+
+.button-everyday-rewards-primary:focus {
+  background-color: var(--everyday-rewards-primary-focus);
+  outline: none;
+}
+
+.button-everyday-rewards-primary:active {
+  background-color: var(--everyday-rewards-primary-active);
+}
+
+/* Customize Primary Button Styles */
+.button-customize {
+  background-color: var(--customize-brand-active);
+  color: var(--button-primary-text-color);
+}
+
+.button-customize:hover {
+  background-color: var(--customize-brand-hover);
+}
+
+.button-customize:focus {
+  background-color: var(--customize-brand-focus);
+  outline: none;
+}
+
+.button-customize:active {
+  background-color: var(--customize-brand-active);
+}
+
+
+
+
+/*# sourceMappingURL=main.63493901.css.map*/
