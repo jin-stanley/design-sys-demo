@@ -1,0 +1,15 @@
+{
+  "lang": {
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "dashboard": {
+    "title": {
+      "main": "This is Title.",
+      "description": "This is Title description."
+    }
+  },
+  "confirm": "Confirm",
+  "cancel": "Cancel",
+  "disabled": "Disabled"
+}

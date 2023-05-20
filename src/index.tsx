@@ -1,19 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { ThemeProvider } from "./theme/themeProvider";
+import { LanguageProvider } from "./language/languageProvider";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  document.getElementById("root") as HTMLElement
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// We can store as more information as we want into theme and we can use it anytime using useTheme hooks.
+const customTheme = {
+  borderRadius: "32px",
+  button: {
+    width: {
+      large: "300px",
+      small: "120px",
+    },
+  },
+  customElementsName: {
+    text: { long: "48px", short: "36px" },
+  },
+};
+
+root.render(
+  <ThemeProvider theme={customTheme}>
+    <LanguageProvider defaultLanguage={"en"}>
+      <App />
+    </LanguageProvider>
+  </ThemeProvider>
+);

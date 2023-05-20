@@ -1,0 +1,46 @@
+/* CSS Variables */
+:root {
+  /* Brand woolworths primary */
+  --woolworths-primary-default: #178841;
+  --woolworths-primary-hover: #126c34;
+  --woolworths-primary-focus: #126c34;
+  --woolworths-primary-active: #0d5127;
+
+  /* Brand everyday-rewards primary */
+  --everyday-rewards-primary-default: #d44500;
+  --everyday-rewards-primary-hover: #b14600;
+  --everyday-rewards-primary-focus: #b14600;
+  --everyday-rewards-primary-active: #7f3200;
+
+  /* We can set as more brands as we want here */
+  --customize-brand-default: unset;
+  --customize-brand-hover: unset;
+  --customize-brand-focus: unset;
+  --customize-brand-active: unset;
+}
+
+/* Button style */
+button {
+  --button-font-family: Arial;
+  --button-border-radius: 8px;
+  --button-border: none;
+  --button-cursor: pointer;
+  --button-display: inline-block;
+  --button-text-align: center;
+  --button-text-decoration: none;
+  --button-white-space: nowrap;
+  --button-transition: background-color 0.3s ease;
+  --button-primary-text-color: #ffffff;
+
+  /* Button large */
+  --button-large-height: 48px;
+  --button-large-font-size: 16px;
+  --button-large-line-height: 24px;
+  --button-large-padding: 12px 16px;
+
+  /* Button small*/
+  --button-small-height: 36px;
+  --button-small-font-size: 14px;
+  --button-small-line-height: 20px;
+  --button-small-padding: 8px 16px;
+}
