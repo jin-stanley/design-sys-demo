@@ -1,3 +1,14 @@
+
+Please try running the app and testing each hook, as all of them are functioning properly.
+
+The application includes both a language provider and a theme provider, each with their respective hooks. These hooks enable global support for language localization and theme customization throughout the app.
+
+Feel free to explore and experiment with different languages and themes using the provided hooks. If you encounter any issues or have any feedback, please let us know.
+
+I hope you enjoy using this demo design system with its language and theme functionality!
+
+DEMO: https://design-sys-demo.vercel.app/?path=/docs/example-button--docs
+
 # Project Overview
 
 - This project is built using Create React App with TypeScript.

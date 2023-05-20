@@ -8,10 +8,24 @@ import EsJson from "./language/mockJson/es.json";
 
 import { useTheme } from "./theme/hooks/useTheme";
 import { getContrastText } from "./theme/utils/getContrastText";
+import useDarkMode from "./hooks/useDarkMode";
+import { useLocalStorage } from "./hooks/useLocalStorage";
+import useMedia from "./hooks/useMedia";
 
 function App() {
   const { language, changeLanguage } = useLanguage();
   const theme = useTheme();
+  const { darkState, setDarkState } = useDarkMode();
+
+  const columnCount = useMedia<number>(
+    // Media queries
+    ["(min-width: 1500px)", "(min-width: 1000px)", "(min-width: 600px)"],
+    // Column counts (relates to above media queries by array index)
+    [5, 4, 3],
+    // Default column count
+    2
+  );
+  console.log('🌟 ----> columnCount:', columnCount)
 
   // test getContrastText
   const bgColor = "#899eb6";
@@ -39,6 +53,22 @@ function App() {
       <div>current global language: {language}</div>
       <br />
       <br />
+      <Button
+        onClick={() => setDarkState(true)}
+        brand="woolworths"
+        size="large"
+        overrides={{ marginRight: "24px", background: "pink" }}
+      >
+        Mode on
+      </Button>
+      <Button
+        onClick={() => setDarkState(false)}
+        brand="woolworths"
+        size="large"
+        overrides={{ marginRight: "24px", background: "pink" }}
+      >
+        Mode off
+      </Button>
       <Button
         onClick={() => changeLanguage("en")}
         brand="woolworths"

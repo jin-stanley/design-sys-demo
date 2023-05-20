@@ -39,7 +39,6 @@ const Button: React.FC<ButtonProps> = ({
   // all classNames
   const buttonClassName = `button ${buttonSize} ${buttonColor} ${buttonFullWidth} ${buttonOverrides}`;
 
-  console.log('🌟 ----> buttonClassName:', buttonClassName)
   return (
     <button
       disabled={disabled}
@@ -48,7 +47,6 @@ const Button: React.FC<ButtonProps> = ({
       // it support style name and css variable names.
       style={!disabled ? { ...overrides } : undefined}
       aria-label={`${brand}-${color}-button`}
-      // onKeyDown={handleKeyDown}
       onClick={onClick}
     >
       {children}

@@ -1,3 +1,9 @@
 @import "variables.css";
 
 @import "component.button.css";
+
+.dark-mode {
+  /* CSS styles for dark mode */
+  background-color: black;
+  color: white;
+}
