@@ -45,20 +45,33 @@ export const EverydayRewardsSmall: Story = {
     children: "Everyday Rewards Small",
   },
 };
+
 export const CustomizeButton: Story = {
   args: {
     overrides: {
-      "--button-customize-default": "#c5b310",
-      "--button-customize-hover": "#e8cd00",
-      "--button-customize-focus": "#e8cd00",
-      "--button-customize-active": "#ffc400",
-
+      "--button-customize-brand-default": "#c5b310",
+      "--button-customize-brand-hover": "#e8cd00",
+      "--button-customize-brand-focus": "#e8cd00",
+      "--button-customize-brand-active": "#ffc400",
       color: "black",
       fontWeight: 700,
     },
     children: "Customize Button",
   },
 };
+export const WoolworthsCustomSmall: Story = {
+  args: {
+    overrides: {
+      background: "deepskyblue",
+      color: "white",
+      fontWeight: 700,
+    },
+    brand: "woolworths",
+    size: "small",
+    children: "Woolworths Small",
+  },
+};
+
 export const DisabledEverydayRewardsSmall: Story = {
   args: {
     brand: "everyday-rewards",
@@ -78,10 +91,10 @@ export const FullWidthEverydayRewardsSmall: Story = {
 export const DisabledCustomizeButton: Story = {
   args: {
     overrides: {
-      "--button-customize-default": "#c5b310",
-      "--button-customize-hover": "#e8cd00",
-      "--button-customize-focus": "#e8cd00",
-      "--button-customize-active": "#ffc400",
+      "--button-customize-brand-default": "#c5b310",
+      "--button-customize-brand-hover": "#e8cd00",
+      "--button-customize-brand-focus": "#e8cd00",
+      "--button-customize-brand-active": "#ffc400",
 
       color: "black",
       fontWeight: 700,

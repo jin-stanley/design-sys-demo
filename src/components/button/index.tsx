@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
   fullWidth = false,
   size = "small",
   color = "primary",
-  brand = "woolworths",
+  brand,
   overrides,
   children,
 }) => {
@@ -31,12 +31,15 @@ const Button: React.FC<ButtonProps> = ({
   // check if button is full size
   const buttonFullWidth = fullWidth ? "button-full" : "";
 
+  const buttonOverrides =
+    !disabled && overrides && Object.keys(overrides).length && !brand
+      ? "button-customize"
+      : "";
+
   // all classNames
-  const buttonClassName = `button ${buttonSize} ${buttonColor} ${buttonFullWidth}`;
+  const buttonClassName = `button ${buttonSize} ${buttonColor} ${buttonFullWidth} ${buttonOverrides}`;
 
-  // : overrides && Object.keys(overrides).length
-  // ? "button-customize"
-
+  console.log('🌟 ----> buttonClassName:', buttonClassName)
   return (
     <button
       disabled={disabled}

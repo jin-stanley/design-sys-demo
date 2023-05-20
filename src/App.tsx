@@ -43,7 +43,7 @@ function App() {
         onClick={() => changeLanguage("en")}
         brand="woolworths"
         size="large"
-        overrides={{ marginRight: "24px" }}
+        overrides={{ marginRight: "24px", background: "pink" }}
       >
         {getTextByLang(langFile, "lang.english", "English")}
       </Button>
